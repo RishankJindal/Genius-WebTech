@@ -1,0 +1,217 @@
+/* Importing external CSS for animations */
+@import url(./common.css);
+@import url(./animations.css);
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+
+header a {
+    margin: 10px;
+    font-weight: 500;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+header a:hover,
+header a.active {
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+/* Logo Styles */
+#logoImg {
+    width: 150px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--primaryColor);
+}
+
+.logo h2 {
+    font-family: 'Arsenal SC';
+    font-size: 2vw;
+}
+
+/* Home Section Styles */
+#home {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 3.8rem;
+    font-weight: bold;
+}
+
+.home-description {
+    font-size: 1.2rem;
+    color: rgb(56, 56, 56);
+    font-weight: 400;
+    word-spacing: 1px;
+    padding: 0 200px;
+}
+
+/* General Section Styles */
+section {
+    padding: 10px;
+    min-height: 80vh;
+}
+
+/* Services Section Styles */
+.services {
+    display: flex;
+    flex-direction: row;
+    max-height: 70vh;
+    margin: 30px 0;
+    padding: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.service-card {
+    min-width: 300px;
+    max-width: 300px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 0 5px var(--primaryColor);
+    margin-right: 20px;
+}
+
+/* Section Header Styles */
+.section-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 3.2vw;
+    font-weight: 500;
+    color: var(--primaryColor);
+    text-align: center;
+}
+
+.section-head div:first-child {
+    height: 2px;
+    background-color: var(--primaryColor);
+    width: 0;
+    animation: underlineAnimation 2s ease-in-out infinite;
+}
+
+/* Service Card Styles */
+.card-img {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.card-title {
+    font-size: 1.4vw;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.card-desc {
+    font-size: 1.1vw;
+    text-align: center;
+}
+
+.card-btn {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+/* About Section Styles */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-desc {
+    margin-top: 120px;
+    color: black;
+    font-size: 1.1rem;
+    padding: 0 80px;
+    text-transform: capitalize;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    margin: 30px 0;
+}
+
+form {
+    width: 60%;
+    margin: auto;
+}
+
+form input::placeholder,
+#contact-textarea::placeholder {
+    color: black;
+}
+
+form input,
+#contact-textarea {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#contact-textarea {
+    height: 18vh;
+}
+
+form input[type=submit] {
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+/* Footer Styles */
+footer {
+    min-height: 40vh;
+    background-color: var(--primaryColor);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.copyright {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Social Icons Styles */
+.social-icons {
+    display: flex;
+}
+
+.social-icons a img {
+    width: 50px;
+    margin: 10px 20px;
+}
